@@ -10,10 +10,10 @@ This fifth homework assignment was designed to be a task scheduler that allows a
 
 Visit the [deployed webpage](https://highwolfx.github.io/Work-Day-Scheduler/) to view the scheduler online.
 
-Otherwise, you can also choose to clone the repo onto your local machine. After cloning the repo, run the index.html file to view the website. The deployed webpage should look like [this](https://raw.githubusercontent.com/highwolfx/Work-Day-Scheduler/assets/welcome.jpg).
+Otherwise, you can also choose to clone the repo onto your local machine. After cloning the repo, run the index.html file to view the website. The deployed webpage should look like [this](https://raw.githubusercontent.com/highwolfx/Work-Day-Scheduler/main/assets/welcome.jpg).
 
 <p align="center">
-    <img alt="welcome screen" src="https://raw.githubusercontent.com/highwolfx/Work-Day-Scheduler/assets/welcome.jpg">
+    <img alt="welcome screen" src="https://raw.githubusercontent.com/highwolfx/Work-Day-Scheduler/main/assets/welcome.jpg">
 </p>
 
 
@@ -21,10 +21,10 @@ Otherwise, you can also choose to clone the repo onto your local machine. After 
 
 Deployed webpage can be found [here](https://highwolfx.github.io/Work-Day-Scheduler/).
 
-The user is greeted with the [task scheduler](https://raw.githubusercontent.com/highwolfx/Work-Day-Scheduler/assets/screenshot.png) screen.
+The user is greeted with the [task scheduler](https://raw.githubusercontent.com/highwolfx/Work-Day-Scheduler/main/assets/screenshot.png) screen.
 
 <p align="center">
-    <img alt="Intro screen" src="https://raw.githubusercontent.com/highwolfx/Work-Day-Scheduler/assets/screenshot.png">
+    <img alt="Intro screen" src="https://raw.githubusercontent.com/highwolfx/Work-Day-Scheduler/main/assets/screenshot.png">
 </p>
 
 In the orange box, the current time and date is displayed, formatted as hour:minute:seconds AM/PM, and the date as day of the week, day-month-year.
