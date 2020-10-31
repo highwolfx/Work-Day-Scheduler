@@ -1,3 +1,4 @@
+/* Background color, font family, other misc. text formatting */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -5,63 +6,41 @@ body {
   background-color: #ECECEC;
 }
 
-textarea{
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-}
-
+/* Title formatting */
 .jumbotron {
   text-align: center;
   background-color: transparent;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+  padding-bottom: 0;
 }
 
-.description{
-  white-space: pre-wrap;
+/* Various Text resizing */
+h1{
+  padding-bottom: 2rem;
 }
 
-.time-block{
+h2{
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+p{
+  font-size: 1.5rem;
+}
+
+/* Centers time slot text */
+.time-hour {
+  font-size: 1.5rem;
   text-align: center;
-  border-radius: 15px;
 }
 
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
-}
-
-.hour {
-  background-color: #ffffff;
+/* Makes textarea transparent when not selected */
+.form-control {
+  background: transparent;
+  border: none;
+  resize: none;
   color: #000000;
-  border-top: 1px dashed #000000;
-}
-
-.past {
-  background-color: #d3d3d3;
-  color: white;
-}
-
-.present {
-  background-color: #ff6961;
-  color: white;
-}
-
-.future {
-  background-color: #77dd77;
-  color: white;
-}
-
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
+  padding: 10px;
 }

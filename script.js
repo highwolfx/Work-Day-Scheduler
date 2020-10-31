@@ -1,13 +1,12 @@
 var currentTime;
 var currentDate;
 var currentHour;
-var selectedTime;
 
 function time() {
     currentDate = dayjs().format('dddd, DD MMMM YYYY');
     currentTime = dayjs().format('hh:mm:ss A')
-    $("#current-time").text("The current time is: " + currentTime);
-    $("#current-date").text("The current date is: " + currentDate);
+    $("#current-time").text(currentTime).css("font-weight", "bold");
+    $("#current-date").text(currentDate).css("font-weight", "bold");
     timeCheck();
 }
 setInterval(time,1000);
