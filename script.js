@@ -47,10 +47,20 @@ function loadTask(){
     for (var i=8; i<18; i++) {
     var loadTask = localStorage.getItem(`task${i}`);
     $(`#${i}-task`).val(loadTask);
-    }
-}
+    };
+};
 loadTask();
 
 
-// Event listener for save button
+// Clears Tasks
+function clearTasks(){
+    for (var i=8; i<18; i++) {
+        $(`#${i}-task`).val("");
+        localStorage.removeItem(`task${i}`);
+    };
+};
+
+
+// Event listener for save and clear buttons
 $(".save-button").click(saveTask);
+$("#clear-button").click(clearTasks);
