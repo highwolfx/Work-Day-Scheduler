@@ -1,7 +1,10 @@
+// Declare variables
 var currentTime;
 var currentDate;
 var currentHour;
 
+
+// Keeps clock updated with dayjs
 function time() {
     currentDate = dayjs().format('dddd, DD MMMM YYYY');
     currentTime = dayjs().format('hh:mm:ss A')
@@ -11,6 +14,8 @@ function time() {
 }
 setInterval(time,1000);
 
+
+// Checks for what time it is and which box needs to be what color
 function timeCheck() {
     currentHour = dayjs().hour();
     for (var i=8; i<18; i++){
@@ -22,6 +27,8 @@ function timeCheck() {
     $(`[data-time=${currentHour}]`).parent().css("background-color", "#ff6961");
 }
 
+
+// Saves task to localstorage when save button has been hit
 function saveTask(){
     var saveTime = $(this).parent().siblings(0).attr("data-time");
     var savedTask = $(`#${saveTime}-task`).val().trim();
@@ -34,13 +41,16 @@ function saveTask(){
     console.log(suffix);
 }
 
+
+// Loads saved tasks on page startup
 function loadTask(){
     for (var i=8; i<18; i++) {
     var loadTask = localStorage.getItem(`task${i}`);
     $(`#${i}-task`).val(loadTask);
     }
 }
-
 loadTask();
-$(document).ready()
+
+
+// Event listener for save button
 $(".save-button").click(saveTask);
